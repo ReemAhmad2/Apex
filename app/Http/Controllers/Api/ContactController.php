@@ -37,7 +37,7 @@ class ContactController extends Controller
             return response([
                 'data' => ['message' => 'success send'],
                 'status' => true,
-                'error' => $validation->errors() ,
+                'error' => null ,
                 'statusCode' => 200
             ]);
 
