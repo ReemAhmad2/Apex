@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\ContactController;
+use App\Http\Controllers\Api\LinkController;
 use App\Http\Controllers\Api\NewsController;
 use App\Http\Controllers\Api\SubscriberController;
 use Illuminate\Http\Request;
@@ -22,5 +23,6 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('news/all',[NewsController::class,'index']);
+Route::get('links/all',[LinkController::class,'index']);
 Route::post('add/subscribe',[SubscriberController::class,'store']);
 Route::post('contact',[ContactController::class,'send']);
